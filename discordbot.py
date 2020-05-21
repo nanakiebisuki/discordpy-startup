@@ -16,11 +16,14 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
-
+  
     
 @bot.command()
 async def おはよう(ctx):
     await ctx.send('おはようございます')
                    
-                   
+ohayo = ['おはようございます', 'おはようございます、いい天気ですね', 'おはようございます、朝食はもう取りましたか？', 'ふふ、もう昼ですよ', 'おはようございます、お寝坊さんですね']
+print(random.choice(ohayo))  
+        
+        
 bot.run(token)
